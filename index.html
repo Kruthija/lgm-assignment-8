@@ -1,0 +1,43 @@
+<!DOCTYPE>
+ <html lang="en-US">
+     <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="x-UA-Compatible"content="IE-edge">
+         <meta name="viewport" content="width=device-width,initial-scale=1">
+         <title>form</title>
+         <script>
+             function fillform(){
+                 var n= document.details.name.value;
+                 var d=document.details.dob.value;
+                 var g=document.details.Gender.value;
+                 var e=document.details.email.value;
+                 var c=document.details.course.value;
+                 var p=document.details.payment.value;
+                 var pp=document.details.proof.value;
+                 alert("Make sure you entered you correct details"  +n);
+                
+                
+             }
+         </script>
+         
+     </head>
+     <body>
+         <form name="details">
+            Name <input type ="text" name="name"><br><br>
+             DOB<input type="date" name="dob"><br><br>
+            Gender<input type="radio" name="Gender">Male
+                  <input type ="radio"name="Gender">Female
+                  <input type ="radio"name="Gender">other
+                  <br><br>
+            E-Mail<input type="email"id="email"name="email"><br><br> 
+            Select Course<input type="checkbox" name="course">Web-Development
+            <input type ="checkbox" name="course">Core Java
+            <input type="checkbox" name="course">Machine Learning<br><br>
+            Select payment<input type="radio" name="payment">UPI
+            <input type="radio" name="payment">PhonePay
+            <input type="radio" name="payment">PayPal<br><br>
+            Payment Proof<input type="file" name="proof"/> <br><br>
+            <input type="submit" onclick="fillform()"><br><br>
+         </form>
+     </body>
+     </html>
